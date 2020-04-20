@@ -1,12 +1,29 @@
+ /* stilius yra is desktop i mobile  */
 .container {
     width: 100%;
     padding-top: 80px;
     padding-bottom: 80px;
     background-color: white;
 }
-    .container > div {
+    .container > .row {
         width: 1000px;
         margin-left: calc(50% - 500px);
-        background-color: tomato;
-
     }
+@media (max-width: 1100px) {
+    .container > .row {
+        width: 700px;
+        margin-left: calc(50% - 350px);
+    }
+}
+@media (max-width: 800px) {
+    .container > .row {
+        width: 500px;
+        margin-left: calc(50% - 250px);
+    }
+}
+@media (max-width: 600px) {
+    .container > .row {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+    }
+}
