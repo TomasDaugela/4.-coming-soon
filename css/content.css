@@ -1,0 +1,29 @@
+.left {
+    width: 50%;
+    float: left;
+}
+.right {
+    width: 40%;
+    float: right;
+}
+    h2 {
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
+.right > p, 
+.left > p {
+    margin-bottom: 30px;
+    width: 100%;
+    line-height: 25px;
+    font-size: 16px;
+    color: #444;
+}
+    .right > p > a, 
+    .left > p > a {
+        color:red;
+        text-decoration: none;
+    }
