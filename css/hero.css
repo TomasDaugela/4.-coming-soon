@@ -1,0 +1,52 @@
+.hero {
+    padding-bottom: 30px;
+    background-color: #03a9f3;
+    background-image: url(../img/MainImage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    text-align: center;
+    /* turi buti ne mazesnis uz ekrano aukstis */
+    background-attachment: fixed;
+    height: 100vh;
+}
+    .hero > .row {
+        width: 600px;
+        margin: 0 calc (50% - 300px)
+    }
+    .hero img {
+        width: 40px;
+       margin-bottom: 40px;
+    }
+    .hero h1 {
+        width: 100%;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-size: 48px;
+        line-height: 50px;
+    }
+    .hero p {
+        width: 100%;
+        font-size: 20px;
+        line-height: 25px;
+        color: #555;
+
+    }
+    .hero .clock {
+        width: 100%;
+        margin: 80px 0px;
+    }
+    .hero .form {
+        width: 90%;
+        margin: 0 5% 20px 5%;
+    }
+    .hero .mouse {
+        
+    }
+@media (max-width: 600px){
+    .hero > .row {
+        width: 100%;
+        margin: 0;
+
+    }
+}
