@@ -8,7 +8,7 @@
     text-align: center;
     /* turi buti ne mazesnis uz ekrano aukstis */
     background-attachment: fixed;
-    height: 100vh;
+    min-height: 100vh;
 }
     .hero > .row {
         width: 600px;
@@ -53,8 +53,43 @@
         margin: 0 5% 20px 5%;
     }
     .hero .mouse {
-        
+        width: 70px;
+        height: 100px;
+        background-color: transparent;
+        border: 5px solid white;
+        border-radius: 50px;
     }
+        .hero .mouse > .wheel {
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            margin-top: 10px;
+            border-radius: 5px;
+
+            animation: mouse 1.5s ease-out 0s infinite normal forwards;
+            background-image: url(../img/mouse.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+            .hero .mouse > .wheel:hover {
+                animation-play-state: paused;
+            }
+@keyframes mouse {
+    0% {
+        margin-top: 10px;
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        margin-top: 50px;
+        opacity: 0;
+        transform: rotate(3600deg);
+    }
+}
+
     @media (max-width: 700px) {
         .hero > .row {
             width: 100%;
