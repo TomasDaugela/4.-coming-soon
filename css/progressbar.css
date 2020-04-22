@@ -20,5 +20,36 @@
          .progress-bar > .progress > .bar {
             width: 86%;
             height: 100%;
-            background-color: green;
+
+           background-color: transparent;
+            
         }
+            .progress-bar > .progress > .bar > .loading {
+                width: 0%;
+                height: 100%;
+                background-color: green;
+
+                animation-name: loading;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-fill-mode: forwards;
+                animation-delay: 1s;
+                /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            }
+
+ /*+ object = bar 
++ t=2s
+change = width 0 --> width 90%
+*/
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+    50% {
+        background-color: yellow;
+    }
+    100% {
+        width: 100%;
+    }
+}
