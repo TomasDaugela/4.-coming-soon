@@ -55,16 +55,19 @@
     .hero .mouse {
         
     }
-@media (max-width: 700px){
-    .hero > .row {
-        width: 100%;
-        margin: 0;
-        padding: 0 20px;
+    @media (max-width: 700px) {
+        .hero > .row {
+            width: 100%;
+            margin: 0;
+            padding: 0 20px;
+        }
     }
-}
-@media (max-width: 500px){
-    .time {
-        width: 50%;
-        
+    @media (max-width: 500px) {
+        .hero .clock > .time {
+            width: 50%;
+        }
+            .hero .clock > .time:nth-child(1),
+            .hero .clock > .time:nth-child(2) {
+                margin-bottom: 30px;
+            }
     }
-}

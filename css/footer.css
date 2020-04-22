@@ -1,57 +1,68 @@
-footer {
+footer.container {
+    padding: 0 0 40px;
+    background-color: #03A9F3;
+    color: #fff;
     text-align: center;
 }
 
-footer.container {
-    padding: 20px  40px;
-    background-color: #03A9F3;
-    color: #fff;
+footer > .row:nth-child(1) {
+    padding: 10px 0;
+    border-bottom: 2px solid #fff;
 }
-    footer > .row:nth-child(1) {
-        border-bottom: 2px solid white;
+    footer .fa {
+        width: 40px;
+        color: #fff;
+        font-size: 20px;
+        line-height: 40px;
+        text-align: center;
+        text-decoration: none;
     }
-        footer .social-link {
-            
-        }
-footer > .row:nth-child(2) {
-     text-align: center;
-     color: #fff8;
 
- }
+footer > .row:nth-child(2) {
+    width: 700px;
+    color: #fff8;
+    font-size: 17px;
+}
     footer .footer-logo {
+        width: 200px;
         margin: 30px 0;
     }
     footer .texts {
-        width: 100%;
         line-height: 30px;
     }
         footer .texts > p {
-            padding:0 10px;
+            float: left;
+            padding: 0 10px;
         }
             footer .texts > p:nth-child(2) {
-                border: 2px solid white;
-                border-bottom: none;
+                border: 2px solid #fff;
                 border-top: none;
+                border-bottom: none;
             }
-    footer .footer-p{
-        width: 70%;
+    footer .footer-p {
         line-height: 30px;
     }
-        footer > .row:nth-child(2) a {
-            text-decoration: none;
-            color: #fff;
-        }
-@media (max-width: 800px) {
-            footer .texts > p:nth-child(2) {
-                border: none;
-            }
-}
-i {
-    width: 40px;
-    color: white;
-    font-size: 50px;
-    line-height: 40px;
-    text-align: center;
-    margin-bottom: 10px;
+    footer > .row:nth-child(2) a {
+        color: #fff;
+        text-decoration: none;
+    }
 
+@media (max-width: 800px) {
+    footer > .row:nth-child(2) {
+        width: 500px;
+        margin: 0 calc(50% - 250px);
+    }
+    footer .texts > p {
+        width: 100%;
+    }
+        footer .texts > p:nth-child(2) {
+            border: none;
+        }
+}
+@media (max-width: 600px) {
+    footer > .row:nth-child(2) {
+        width: 100%;
+        padding: 0 20px;
+        margin: 0;
+    }
 }
