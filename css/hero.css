@@ -52,6 +52,15 @@
         width: 90%;
         margin: 0 5% 20px 5%;
     }
+        .hero .form > input {
+            background-color: transparent;
+            color: white;
+            border-bottom-color: white;
+            outline: n;
+        }
+        .hero .form > input::placeholder {
+            color: white;
+        }
     .hero .mouse {
         width: 70px;
         height: 100px;

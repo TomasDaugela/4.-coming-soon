@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>coming soon</title>
+    <!-- reset -->
     <link rel="stylesheet" href="./css/reset.css">
+    <!-- 3rd party  -->
     <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <!-- atomic elements  -->
+    <link rel="stylesheet" href="./css/progressbar.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <!-- layout -->
     <link rel="stylesheet" href="./css/layout.css">
+    <!-- structure -->
     <link rel="stylesheet" href="./css/hero.css">
     <link rel="stylesheet" href="./css/content.css">
-    <link rel="stylesheet" href="./css/progressbar.css">
     <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
@@ -38,9 +45,10 @@
                     <div class="label">Seconds</div>
                 </div>
             </div>
-            <div class="form">
-                Subscribe form
-            </div>
+            <form class="form">
+                <input type="email" placeholder="Type your email">
+                <div class="btn btn-red">Send message</div>
+            </form>
             <div class="mouse">
                 <div class="wheel"></div>
             </div>
@@ -100,9 +108,12 @@
             <div class="right">
                 <h2>Have any questions?</h2>
                 <p>Lorem ipsum dolor autem corporis non reiciendis et accusamus impedit <a href="mailto:myemail@email.com">myemail@email.com</a> vitae repellendus, suscipit minus officiis delectus.</p>
-            <div class="form">
-                Message form
-             </div>
+                <form class="form">
+                    <input class="half" type="text" placeholder="Name">
+                    <input class="half" type="email" placeholder="Email">
+                    <textarea name="" placeholder="Message"></textarea>
+                    <div class="btn">Send message</div>
+                </form>
            </div>
         </div>
     </main>
@@ -129,6 +140,7 @@
            <a href="" class="social-link">
             <i class="fa fa-facebook" aria-hidden="true"></i>
            </a>
+           <a href="#" class="btn fa fa-angle-up back-to-top btn-circle"></a>
         </div>
         <div class="row">
             <img class="footer-logo" src="./img/matroxlogo.png">

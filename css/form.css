@@ -1,0 +1,27 @@
+.form {
+    display: inline-block;
+    width: 100%;
+}
+    .form > input,
+    .form >textarea {
+        display: inline-block;
+        width: 100%;
+        float: left;
+        padding: 5px 0;
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 22px;
+        border: none;
+        border-bottom: 1px solid gray;
+    }
+    .form > textarea {
+        resize: vertical;
+        min-height: 99px;
+        max-height: 300px;
+    }
+    .form > .half {
+        width: calc(50% - 10px);
+    }
+    .form > .half + .half {
+        margin-left: 20px;
+    }
