@@ -8,6 +8,7 @@ footer.container {
 footer > .row:nth-child(1) {
     padding: 10px 0;
     border-bottom: 2px solid #fff;
+    position: relative;
 }
     footer .fa {
         width: 40px;
@@ -46,6 +47,11 @@ footer > .row:nth-child(2) {
         color: #fff;
         text-decoration: none;
     }
+    .back-to-top {
+        position: absolute;
+        top: -20px;
+        right: -15px;
+    }
 
 @media (max-width: 800px) {
     footer > .row:nth-child(2) {
@@ -64,5 +70,8 @@ footer > .row:nth-child(2) {
         width: 100%;
         padding: 0 20px;
         margin: 0;
+    }
+    .back-to-top {
+        
     }
 }
