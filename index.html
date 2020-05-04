@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
-    <div class="container hero">
+    <div class="container hero" id="change">
         <div class="row">
            <img src="./img/logo.png" alt="logoso">
            <h1>Coming Soon</h1>
@@ -29,19 +29,19 @@
                 adipisicing elit. Sed, animi elit. Sed, animi</p>
             <div class="clock">
                 <div class="time">
-                    <div class="value">432</div>
+                    <div class="value" id="days">432</div>
                     <div class="label">Days</div>
                 </div>
                 <div class="time">
-                    <div class="value">89</div>
+                    <div class="value" id="hours">89</div>
                     <div class="label">Hours</div>
                 </div>
                 <div class="time">
-                    <div class="value">37</div>
+                    <div class="value" id="minutes">37</div>
                     <div class="label">Minutes</div>
                 </div>
                 <div class="time">
-                    <div class="value">39</div>
+                    <div class="value" id="seconds">39</div>
                     <div class="label">Seconds</div>
                 </div>
             </div>
@@ -138,5 +138,6 @@
             <p class="footer-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo alias tempora expedita dolorem nulla porro sequi at <a href="#">Matrox</a> dolorum pariatur ratione?</p>
         </div>
     </footer>
+    <script src="clock.js"></script>
 </body>
 </html>
